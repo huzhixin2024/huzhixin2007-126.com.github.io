@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Hu Zhixin | University of Malaya | Generative AI & LLM Research</title>
+    <style>
+        :root {
+            --text-color: #222222;
+            --link-color: #004488;
+            --link-hover: #002244;
+            --border-color: #dddddd;
+            --bg-color: #ffffff;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            line-height: 1.65;
+            font-family: "Georgia", "Times New Roman", serif;
+            max-width: 1080px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+        nav {
+            border-bottom: 1px solid var(--border-color);
+            padding: 24px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            background: #ffffff;
+            z-index: 99;
+        }
+        .nav-logo {
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+        .nav-links a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: var(--link-color);
+        }
+        .nav-links a:hover {
+            color: var(--link-hover);
+            text-decoration: underline;
+        }
+        .hero-section {
+            display: grid;
+            grid-template-columns: 220px 1fr;
+            gap: 32px;
+            padding: 48px 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .profile-img {
+            width: 100%;
+            border-radius: 4px;
+            background:#efefef;
+            min-height:200px;
+            display:block;
+        }
+        .hero-top h1 {
+            font-size: 2.2rem;
+            margin-bottom: 4px;
+        }
+        .hero-top .subtitle {
+            font-size: 1.1rem;
+            color: #444444;
+            margin-bottom: 16px;
+        }
+        .hero-brief {
+            font-size: 1.05rem;
+            margin-bottom: 24px;
+        }
+        .quick-nav {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+        .quick-nav a {
+            padding: 7px 12px;
+            border: 1px solid var(--link-color);
+            border-radius: 4px;
+            color: var(--link-color);
+            text-decoration: none;
+        }
+        .quick-nav a:hover {
+            background-color: var(--link-color);
+            color: #ffffff;
+        }
+        section {
+            padding: 40px 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+        section h2 {
+            font-size: 1.6rem;
+            margin-bottom: 20px;
+        }
+        .two-col {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 32px;
+        }
+        .item-block {
+            margin-bottom: 20px;
+        }
+        .item-block h4 {
+            font-size: 1.1rem;
+        }
+        .meta-text {
+            color: #555555;
+            font-size: 0.95rem;
+        }
+        .publication-item {
+            margin-bottom: 24px;
+        }
+        .publication-title {
+            font-weight: 600;
+            font-size: 1.05rem;
+        }
+        .pub-links a {
+            color: var(--link-color);
+            margin-right: 16px;
+        }
+        .pub-links a:hover {
+            color: var(--link-hover);
+        }
+        ul {
+            padding-left: 22px;
+            margin-top: 8px;
+        }
+        footer {
+            padding: 24px 0;
+            color: #666666;
+            font-size: 0.9rem;
+        }
+        @media(max-width:720px){
+            .hero-section {
+                grid-template-columns: 1fr;
+            }
+            .profile-img {
+                max-width: 240px;
+            }
+            .two-col {
+                grid-template-columns: 1fr;
+            }
+            .nav-links a {
+                margin-left: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+<nav>
+    <div class="nav-logo">Dr. Hu Zhixin</div>
+    <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<div class="hero-section">
+    <div>
+        <img class="profile-img" src="profile.jpg" alt="Dr. Hu Zhixin">
+    </div>
+    <div>
+        <div class="hero-top">
+            <h1>Dr. Hu Zhixin</h1>
+            <div class="subtitle">Faculty of Computer Science and Information Technology, University of Malaya<br>Artificial Intelligence · Generative AI · RAG · LLM Hallucination Mitigation</div>
+        </div>
+        <div class="hero-brief">
+My research focuses on Retrieval‑Augmented Generation (RAG), large‑language‑model hallucination suppression, factual consistency for AIGC text generation, and hybrid sparse‑dense evidence retrieval for building reliable generative AI systems. I combine industrial‑grade AI engineering practice with academic research to develop high‑trustworthiness generative‑AI content‑creation solutions.
+        </div>
+        <div class="quick-nav">
+            <a href="#about">View Biography</a>
+            <a href="#research">Research Projects</a>
+            <a href="#publications">Read Papers</a>
+            <a href="#contact">Get In Touch</a>
+        </div>
+    </div>
+</div>
+
+<section id="about">
+    <h2>About — Biography, Qualifications & Professional Background</h2>
+    <div class="two-col">
+        <div>
+            <h3>Short Biography</h3>
+            <p>I hold research affiliation with the Faculty of Computer Science and Information Technology at University of Malaya, Malaysia. My professional background covers senior technical management, algorithm research & development, and artificial‑intelligence product innovation. My flagship academic contribution is HER‑RAG: Hybrid‑Evidence Retrieval RAG Model for Hallucination Mitigation in AIGC Text Generation. My research aims to mitigate factual fabrication artifacts produced by large language models and enhance factual reliability for real‑world AIGC scenarios such as intelligent writing, domain‑specific question‑answering, and academic‑assisted content generation.</p>
+            <br>
+            <p>My core expertise includes Generative AI, large‑language‑model optimization, hybrid retrieval‑augmented generation, factual‑consistency evaluation, long‑context LLM robustness, and AIGC hallucination detection & mitigation.</p>
+        </div>
+        <div>
+            <h3>Qualifications & Certifications</h3>
+            <div class="item-block">
+                <h4>Bachelor of Education</h4>
+                <div class="meta-text">Jiangxi Science and Technology Normal University | 2010</div>
+            </div>
+            <div class="item-block">
+                <h4>Huawei Certified Artificial Intelligence Engineer</h4>
+                <div class="meta-text">Huawei | 2025</div>
+            </div>
+            <div class="item-block">
+                <h4>AI Product Manager Certification</h4>
+                <div class="meta-text">Google | 2023</div>
+            </div>
+            <div class="item-block">
+                <h4>Independent Director & Secretary of the Board Qualification</h4>
+                <div class="meta-text">Shanghai Stock Exchange | 2015‑2017</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="research">
+    <h2>Research & Projects</h2>
+    <div class="item-block">
+        <h4>HER‑RAG: Hybrid‑Evidence Retrieval Enhanced RAG for Hallucination Mitigation</h4>
+        <p>This work proposes an end‑to‑end RAG framework that suppresses LLM hallucinations collaboratively from both retrieval‑side and generation‑side perspectives. The architecture integrates two‑layer sparse‑dense hybrid evidence retrieval, attention‑driven dynamic evidence weighting‑and‑filtering, together with a factual‑consistency auxiliary joint loss function. Evaluated on TruthfulQA and HotpotQA benchmarks, the system achieves factual‑consistency F1‑score of 0.846 and hallucination‑detection AUC of 0.881. Compared against vanilla Llama‑3‑8B baseline, hallucination ratio decreases by 22.7%; compared with conventional single‑dense‑retrieval RAG, hallucination ratio drops by 13.5%.</p>
+        <div class="meta-text">Keywords: Generative‑AI; Large Language Model; Retrieval‑Augmented Generation; Hallucination Mitigation; Factual Consistency; Hybrid Sparse‑Dense Retrieval</div>
+    </div>
+
+    <div class="item-block">
+        <h4>Ongoing & Future Research Directions</h4>
+        <ul>
+            <li>Multi‑modal hybrid‑evidence retrieval for hallucination reduction in multi‑modal AIGC</li>
+            <li>LLM‑Agent‑driven dynamic incremental update mechanism for knowledge bases</li>
+            <li>Domain‑specialized high‑reliability RAG for high‑stakes generative‑AI use‑cases in healthcare and legal domains</li>
+            <li>Long‑context robustness and factual‑consistency optimization under massive retrieved‑evidence input</li>
+        </ul>
+    </div>
+</section>
+
+<section id="publications">
+    <h2>Publications</h2>
+    <div class="publication-item">
+        <div class="publication-title">Hybrid‑Evidence Retrieval RAG Model for Hallucination Mitigation in AIGC Text Generation</div>
+        <div class="meta-text"><strong>Hu, Zhixin</strong>. Faculty of Computer Science and Information Technology, University of Malaya, Malaysia.</div>
+        <p>Abstract: Generative Artificial Intelligence large language models deliver powerful free‑form text generation capabilities for intelligent writing, open‑domain question‑answering, and automated content creation. Nevertheless, the inherent hallucination phenomenon severely undermines factual reliability of generated outputs, where LLMs produce linguistically fluent but factually fabricated statements, fake citations, and erroneous causal deductions. This paper proposes HER‑RAG, a hybrid‑evidence retrieval enhanced RAG framework dedicated to hallucination suppression for AIGC text generation.</p>
+        <div class="pub-links">
+            <a href="#">Download PDF</a>
+            <a href="#">View Abstract</a>
+        </div>
+    </div>
+</section>
+
+<section id="experience">
+    <h2>Professional Experience</h2>
+    <div class="item-block">
+        <h4>Chief Executive Officer</h4>
+        <div class="meta-text">Guangnian Yueqian (Shanghai) Artificial Intelligence Technology Co., Ltd. | May 2022 — Present</div>
+        <p>Overall leadership for generative‑AI product research and development, technical roadmap planning, industrial‑grade large‑language‑model applications and knowledge‑augmented‑generation system delivery.</p>
+    </div>
+    <div class="item-block">
+        <h4>Head of Algorithm Department</h4>
+        <div class="meta-text">ByteDance | June 2020 — May 2022</div>
+        <p>Algorithm team leadership; responsible for natural‑language‑processing, large‑model‑oriented algorithm research and engineering implementation.</p>
+    </div>
+    <div class="item-block">
+        <h4>Senior Vice President (SVP)</h4>
+        <div class="meta-text">China Electronic Cloud | June 2008 — May 2020</div>
+        <p>Responsible for cloud‑computing and artificial‑intelligence‑related business development, technical architecture design and product management.</p>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <div class="item-block">
+        <p><strong>Email:</strong> huzhixin2007@126.com</p>
+        <p><strong>Affiliation:</strong> Faculty of Computer Science and Information Technology, University of Malaya, Malaysia</p>
+        <p><strong>Mobile:</strong> +86 13761733415</p>
+        <br>
+        <p>I welcome academic collaboration, research discussions, and industry‑academia joint project inquiries focusing on Generative‑AI, RAG optimization and LLM hallucination‑mitigation topics.</p>
+    </div>
+</section>
+
+<footer>
+© <span id="year"></span> Dr. Hu Zhixin. All rights reserved.
+<script>document.getElementById("year").innerText=new Date().getFullYear()</script>
+</footer>
+</body>
+</html>
